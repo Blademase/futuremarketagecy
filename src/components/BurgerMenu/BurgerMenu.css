@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  #ModalMainText{
+    display: flex;
+    color: #FFFFFF;
+    font-size: calc(16px + 2vw);
+    font-family: "Montserrat", sans-serif;
+    
+  }
+  #BurgerMenuContent{
+    display: flex;
+    position: fixed;
+    padding-top: 10vh;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;    
+    text-align:left;
+    width: 80%;
+;
+  }
+  #BurgerMenuContent button{
+    background: none;
+  
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    border: none;
+  
+  }
+

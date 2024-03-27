@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+#Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+#Header a{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+#Menu{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+#Menu button{
+    background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+font-weight: 200;
+}
+#PhoneIcon{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    /* gap: %; */
+    width: 15%;
+    
+}
+#BurgerMenu{
+    display: none;
+    position: absolute;
+    gap:1vw;
+    right: 10px;
+}
+@media (max-width: 1135px) { 
+    #PhoneIcon{
+        gap: 5%;
+        width: 20%;
+    }
+    #Header{
+     justify-content: space-between;
+     padding-left: 5%;
+    }
+    #Menu{
+        width: 60%;  
+    }
+ }
+ @media (max-width: 1000px) {
+    #Header{
+        justify-content: space-between;
+        padding-left: 2%;
+       }
+    #Menu{
+        width: 55%;  
+    }
+    #Header a{
+       width: auto;
+    }
+
+    #BurgerMenu{
+        display: flex;
+       right: 10px;
+    }
+    #Menu{
+    display: none;  
+    }
+    #PhoneIcon{
+        display: none; 
+    }
+   
+ }
+ 

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.CallBackOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+    display: flex;
+    z-index: 200;
+  }
+  #ModalMainText{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    
+  }
+  .CallBackContent {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 25vw;
+   background-color: #0F1D45;
+  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+  }
+  #RequestCallBack {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    height: 65px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    width: 18vw;
+    color: #FFFFFF;
+    background: none;
+    border-color: #FFFFFF;
+    border-width: 1px;
+  }
+ #RequestCallBack:enabled{
+  background-color: #FFFFFF;
+  color: #0F1D45;
+ }
+ #RequestCallBack:hover:enabled {
+  /* Ваши стили при наведении на кнопку */
+  background-color: #0F1D45;
+  color: #FFFFFF;
+}
+ #RequestCallBack:hover:enabled #RequestLine{
+  border-left: 2.3px solid #FFFFFF;
+ }
+ #RequestCallBack:enabled #RequestLine{
+  border-left: 2.3px solid #0F1D45;
+ }
+ #RequestCallBack:enabled #Vector path{
+ stroke: #0F1D45;
+ }
+ #RequestCallBack:hover:enabled #Vector path{
+  stroke: #FFFFFF;
+  }
+  #RequestLine {
+    position: absolute;
+    border-left: 2.3px solid #FFFFFF;
+    height: 100%;
+    right: 20%;
+  }
+  
+  /* Дополнительные стили для текста кнопки, если нужно */
+
+  #RequestVector{
+    position: absolute;
+right: 10px;
+bottom: 10px;
+
+}
+  #ModalClose{
+    position: absolute;
+    top:1vw;
+    right: 1vw;
+    cursor: pointer;
+  }
+  #Input input{
+    border: none; /* Убираем все бордеры */
+    border-bottom: 1px solid white; /* Устанавливаем только нижний бордер */
+    outline: none; /* Убираем обводку при фокусе */
+    background: none;
+    width: 100%;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  #Input{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 80%;
+    color: #FFFFFF;
+    opacity: 0.8;  
+  }
+  #Input input::placeholder{
+    font-size: 15px;
+  }
+  #ModalContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    padding-top: 70px;
+    align-items: center;    
+    text-align:left;
+
+  }
+  #ModalCheckBox input{
+  width: 5vw;  
+  outline: none;
+  }
+  #ModalCheckBox{
+    display: flex;
+    padding-left: 1.8vw;
+    color: #FFFFFF;
+  }
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .slide-from-right-enter {
+    animation: slideFromRight 0.5s forwards;
+  }
+  
+  .slide-from-right-exit {
+    animation: slideFromRight 0.5s reverse forwards;
+  }
+  @media (max-width: 1200px) {
+#ModalMainText{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    
+  }
+  #RequestLine {
+
+
+    right: 30%;
+  }
+}   
+@media (max-width:  1530px) {
+  #RequestCallBackText {
+  
+      width: 70%;
+    }
+}
+@media (max-width:  1000px) {
+  .CallBackContent {
+     width: 100vw
+   }
+   #RequestCallBackText {
+  display: flex;
+    width: 100%;
+    justify-content: start;
+  }
+  #RequestCallBack{
+   width: 100%;   
+  }
+  #RequestLine {
+    right: 17%;
+  }
+  #ModalCheckBox{
+    width: 87%;
+  }
+}
+@media (max-width:  1000px) {
+#ModalCheckBox{
+  width: 85%;
+}}
+@media (max-width:  500px) {
+  .CallBackContent {
+    width: 120vw
+  }}

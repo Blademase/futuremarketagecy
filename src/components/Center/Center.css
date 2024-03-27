@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+#Center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 43%;
+    padding-left: 15vh;
+    padding-top: 130px;
+    height: 401px;
+}
+#Center a{
+    width: 80%;
+}
+#MainText{
+    color: #FFFFFF;
+    font-size: calc(16px + 3.3vw);
+    font-family: "Raleway", sans-serif;
+}
+#MinorText{
+    display: flex;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-size:  calc(10px + 0.4vw);
+    font-weight: 100;
+    gap: 3.5%;
+}
+#BtnVerticalLine{
+    position: absolute;
+    border-left: 2.3px solid #FFFFFF;
+    height: 100%;
+    right: 20%;
+}
+#SignUp:hover #BtnVerticalLine,#Consultation:hover #BtnVerticalLine {
+  
+    border-left: 2.3px solid #0B3461;
+ 
+}
+#SignUp:hover #Vector path,#Consultation:hover #Vector path{
+   stroke: #0B3461;
+}
+#VerticalLine{
+    border-left: 1px solid #FFFFFF;
+    height: 100%; 
+}
+#SignUp,#Consultation{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    height: 65px;
+    font-size: calc(10px + 0.3vw);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+        background: none;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        justify-content: space-between;
+}
+#SignUp:hover, #Consultation:hover {
+    background-color: #FFFFFF;
+    border: none;
+    color: #07305D;
+  }
+#Vector{
+    position: absolute;
+right: 10px;
+bottom: 10px;
+}
+@media (max-width: 1519px) {
+    #Center{
+        padding-top: 30px;
+     
+    }
+}
+#CallBack{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:  1368px) {
+  
+  
+    #SignUpText::after {
+        display: flex;
+        content: "Записаться на консультацию ";
+      }
+      #ConsultationText::after{
+        content: "Бесплатная консультация";
+      
+      }
+}
+
+@media (max-width:  1530px) {
+    #SignUpText::after {
+        display: block;
+        content: "Записаться на консультацию";
+        width: 50%;
+      }
+}
+@media (max-width:  1368px) {
+    #ConsultationText::after{
+        display: block;
+        content: "Бесплатная консультация";
+        width: 50%;
+      }
+}
+
+@media (max-width:  1218px) {
+    #SignUpText::after {
+    
+        width: 80%;
+      }
+      #BtnVerticalLine{
+      
+        right: 25%;
+    }
+}
+@media (max-width: 1150px) {
+    #Center{
+        padding-top: 0;
+        /* height: 701px; */
+    }
+   
+}
+@media (max-width:  1060px) {
+
+#MainText{
+    font-size: 5vw;
+}
+}
+@media (max-width:  1000px) {
+    #SignUpText::after {
+        content: "Записаться";
+      }
+      #BtnVerticalLine{
+      
+        right: 30%;
+    }
+    #ConsultationText::after{
+        content: "Заказать звонок";
+      }
+}
+@media (max-width:  814px) {
+    #CallBack{
+        display: flex;
+        flex-direction: column;
+       gap: 2vh;
+    }
+}
+@media (max-width:  660px){
+    #Center{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        width: 46%;
+        padding-left: 5vh;
+        padding-top: 30px;
+        height: 401px;
+    }
+}
+@media (max-width:  445px){
+    #SignUp,#Consultation{
+        width: 120%;
+    }
+}

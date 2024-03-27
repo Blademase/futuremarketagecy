@@ -1,0 +1,61 @@
+#MainMenu {
+    background-image: url('../../components/images/background.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 115vh;
+
+    
+}
+
+#MentorImage {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    padding-right: 8%; 
+    width: 27.34375%;
+    bottom: -15vh;
+    right: 0;
+}
+#MentorImage img{
+    width: 100%;
+    height:100vh;
+}
+
+@media (max-width: 1200px) {
+    #MentorImage {
+        width: 30.34375%;   
+    }
+}
+@media (max-width: 1000px) {
+    #MentorImage {
+        width: 40%;
+          padding-right: 8%; 
+    }
+}
+@media (max-width: 900px) {
+    #MentorImage {
+        width: 50%;
+          padding-right: 0; 
+    }
+}
+@media (max-width: 750px) {
+    #MentorImage {
+        width: 58%;
+       
+    }
+}
+@media (max-width: 500px) {
+   
+    #MentorImage {
+        width: 1000px; /* Настройте высоту контейнера на половину изображения */
+        overflow-x: hidden; /* Скрытие части изображения, выходящей за границы контейнера */
+  
+        width: 70%;
+        bottom: -15vh;
+       
+        transform: translateX(30%);
+    }
+    #MainMenu {
+        width: 500px;
+    }
+}
