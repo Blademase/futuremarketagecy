@@ -29,7 +29,6 @@ function CallBack() {
       return;
     }
   };
-  C:\Users\AH\Desktop\тестовое задание\futuremarketagecy
   const handleNameChange = (event) => {
     const inputValue = event.target.value;
     if (/^[+a-zA-ZА-Яа-я\s]*$/.test(inputValue) || inputValue === '') {
